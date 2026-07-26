@@ -1,0 +1,29 @@
+{
+  "entities": {
+    "users": {
+      "title": "Users",
+      "description": "User profile records",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string" },
+        "email": { "type": "string" },
+        "displayName": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["uid"]
+    },
+    "projects": {
+      "title": "Projects",
+      "description": "User generated build projects",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "title": { "type": "string" },
+        "prompt": { "type": "string" },
+        "html": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["userId"]
+    }
+  }
+}
